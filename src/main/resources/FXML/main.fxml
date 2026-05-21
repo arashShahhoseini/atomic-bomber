@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.MainMenuController">
+    <center>
+        <VBox spacing="20" alignment="CENTER" stylesheets="@../CSS/mainMenu.css">
+            <HBox alignment="CENTER" spacing="20">
+                <Button fx:id="avatar" onMouseClicked="#avatar" maxWidth="30" minHeight="30" styleClass="avatar-button">
+                    <graphic>
+                        <ImageView fx:id="image" fitWidth="50" fitHeight="50" preserveRatio="true"/>
+                    </graphic>
+                </Button>
+                <Button fx:id="profile" onMouseClicked="#profile" maxWidth="200" styleClass="username-button"/>
+            </HBox>
+            <Label text="Atomic Bomber" styleClass="header"/>
+            <Button text="continue" maxWidth="300"/>
+            <Button text="new game" onMouseClicked="#newGame" maxWidth="300"/>
+            <Button text="Leader Board" onMouseClicked="#leaderBoard" maxWidth="300"/>
+            <Button text="setting" onMouseClicked="#setting" maxWidth="300"/>
+            <Button text="exit" onMouseClicked="#exit" maxWidth="100" styleClass="exitButton"/>
+        </VBox>
+    </center>
+</BorderPane>

@@ -1,0 +1,115 @@
+/* style.css */
+
+/* Global Styles */
+* {
+    -fx-font-family: "Roboto", "Arial", sans-serif;
+    -fx-font-smoothing-type: gray;
+}
+
+/* BorderPane Styles */
+.root {
+    -fx-background-color: #f5f5f5;
+}
+
+/* VBox Styles */
+.vbox {
+    -fx-padding: 40px;
+}
+
+/* Label Styles */
+.header {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-padding-bottom: 20px;
+}
+
+.normal-text {
+    -fx-font-weight: normal;
+    -fx-font-size: 16px;
+    -fx-text-fill: #666666;
+}
+
+/* TextField Styles */
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #4CAF50;
+    -fx-border-width: 2px;
+    -fx-border-radius: 20px;
+    -fx-padding: 12px 16px;
+    -fx-font-size: 16px;
+    -fx-prompt-text-fill: #999999;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0, 0, 2);
+}
+
+.text-field:focused {
+    -fx-border-color: #388E3C;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 8, 0, 0, 3);
+}
+
+/* Button Styles */
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+    -fx-padding: 12px 20px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 3);
+    -fx-cursor: hand;
+}
+
+.exitButton {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+    -fx-padding: 12px 20px;
+    -fx-border-radius: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 3);
+    -fx-cursor: hand;
+}
+
+.avatar-button {
+    -fx-background-color: #46b090;
+    -fx-background-radius: 50px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 3);
+    -fx-cursor: hand;
+}
+
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #4CAF50;
+    -fx-border-width: 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-padding: 10px 16px;
+    -fx-font-size: 16px;
+    -fx-prompt-text-fill: #999999;
+}
+
+.button:hover {
+    -fx-background-color: #388E3C;
+}
+
+.avatar-button:hover {
+    -fx-background-color: #353935;
+}
+
+.exitButton:hover {
+    -fx-background-color: #CC0000;
+}
+
+.username-button {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-border-color: black;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 25px;
+    -fx-font-size: 16px;
+    -fx-padding: 0 50px;
+    -fx-cursor: hand;
+}
+
+.username-button:hover {
+    -fx-text-fill: #E0E0E0;
+    -fx-background-color: #363b36;
+}

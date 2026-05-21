@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.FinishMenuController"
+            prefHeight="400.0" prefWidth="600.0">
+    <center>
+        <VBox alignment="CENTER" spacing="20" stylesheets="@../CSS/finish.css">
+            <Label fx:id="status" styleClass="header"/>
+            <VBox styleClass="vbox"  spacing="10" alignment="CENTER">
+                <Button fx:id="wave" styleClass="medium" maxWidth="300"/>
+                <Button fx:id="kills" styleClass="medium" maxWidth="300"/>
+                <Button fx:id="accuracy" styleClass="medium" maxWidth="300"/>
+            </VBox>
+            <Button minWidth="400" text="Back To Main Menu" onMouseClicked="#back"/>
+        </VBox>
+    </center>
+</BorderPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.LeaderBoardController">
+    <center>
+        <VBox spacing="20" alignment="CENTER" stylesheets="@../CSS/leaderBoard.css">
+            <Label text="Leader Board" maxWidth="300" styleClass="header" alignment="CENTER"/>
+            <HBox styleClass="vbox" alignment="CENTER" spacing="10">
+                <VBox alignment="CENTER" spacing="5">
+                    <Button fx:id="first" maxWidth="300" minWidth="300" styleClass="first"/>
+                    <Button fx:id="second" maxWidth="300" styleClass="second"/>
+                    <Button fx:id="third" maxWidth="300" styleClass="third"/>
+                    <Button fx:id="forth" maxWidth="300" styleClass="others"/>
+                    <Button fx:id="fifth" maxWidth="300" styleClass="others"/>
+                </VBox>
+                <VBox alignment="CENTER" spacing="5">
+                    <Button fx:id="sixth" maxWidth="300" styleClass="others" minWidth="300"/>
+                    <Button fx:id="seventh" maxWidth="300" styleClass="others"/>
+                    <Button fx:id="eighth" maxWidth="300" styleClass="others"/>
+                    <Button fx:id="ninth" maxWidth="300" styleClass="others"/>
+                    <Button fx:id="tenth" maxWidth="300" styleClass="others"/>
+                </VBox>
+            </HBox>
+            <Label text="Filter By:" maxWidth="300" alignment="CENTER" styleClass="audio-text"/>
+            <HBox alignment="CENTER" spacing="20">
+                <Button text="Mode" onMouseClicked="#Mode" maxWidth="150"/>
+                <Button text="Kill" onMouseClicked="#kill" maxWidth="150"/>
+                <Button text="Accuracy" onMouseClicked="#accuracy" maxWidth="150"/>
+            </HBox>
+            <Button text="back" onMouseClicked="#back" maxWidth="300"/>
+        </VBox>
+    </center>
+</BorderPane>

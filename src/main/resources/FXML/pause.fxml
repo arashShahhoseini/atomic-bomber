@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.PauseMenuController"
+            prefHeight="600" prefWidth="600.0">
+    <center>
+        <VBox stylesheets="@../CSS/style.css" spacing="10" alignment="CENTER">
+            <Label text="Pause" styleClass="header"/>
+            <VBox spacing="10" alignment="CENTER" styleClass="vbox">
+                <Button fx:id="up" maxWidth="60"/>
+                <HBox alignment="CENTER" spacing="15">
+                    <Button fx:id="left" maxWidth="60" minWidth="60"/>
+                    <Button fx:id="exit" text="EXIT" maxWidth="100" onMouseClicked="#exit" styleClass="hard"/>
+                    <Button fx:id="right" maxWidth="60" minWidth="60"/>
+                </HBox>
+                <Button fx:id="down" maxWidth="60"/>
+            </VBox>
+            <HBox alignment="CENTER" spacing="15">
+                <Button text="mute" onMouseClicked="#mute" maxWidth="70" minWidth="70" styleClass="avatar-button"/>
+                <Button text="music 1" maxWidth="100" minWidth="100" onMouseClicked="#music1" styleClass="medium"/>
+                <Button text="music 2" maxWidth="100" onMouseClicked="#music2" styleClass="medium"/>
+                <Button text="music 3" maxWidth="100" minWidth="100" onMouseClicked="#music3" styleClass="medium"/>
+            </HBox>
+            <Button text="back" onMouseClicked="#start" maxWidth="300"/>
+        </VBox>
+    </center>
+</BorderPane>

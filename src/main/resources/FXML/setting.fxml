@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.SettingMenuController"
+            prefHeight="400.0" prefWidth="600.0">
+    <center>
+        <VBox alignment="CENTER" stylesheets="@../CSS/style.css" spacing="20">
+            <Label text="setting" styleClass="header"/>
+
+            <HBox alignment="CENTER" spacing="10">
+                <Label text="Audio:" styleClass="audio-text"/>
+                <Button text="On" onMouseClicked="#unmute" maxWidth="100" styleClass="avatar-button"/>
+                <Button text="Off" onMouseClicked="#mute" maxWidth="100" styleClass="avatar-button"/>
+            </HBox>
+            <VBox alignment="CENTER" spacing="10" styleClass="vbox">
+                <Label text="Game Mode:" styleClass="audio-text"/>
+                <Button maxWidth="300" text="Easy" onMouseClicked="#easy"/>
+                <Button maxWidth="300" text="Medium" styleClass="medium" onMouseClicked="#medium"/>
+                <Button maxWidth="300" text="Hard" styleClass="hard" onMouseClicked="#hard"/>
+            </VBox>
+            <HBox alignment="CENTER" spacing="10">
+                <Button text="black-white" onMouseClicked="#blakWhite" maxWidth="200"/>
+                <Button text="control" onMouseClicked="#control" maxWidth="200"/>
+            </HBox>
+            <Button text="back" onMouseClicked="#back" maxWidth="100"/>
+        </VBox>
+    </center>
+</BorderPane>

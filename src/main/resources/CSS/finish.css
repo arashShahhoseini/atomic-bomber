@@ -1,0 +1,55 @@
+* {
+    -fx-font-family: "Roboto", "Arial", sans-serif;
+}
+
+.root {
+    -fx-background-color: #f5f5f5;
+}
+
+.vbox {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10px;
+    -fx-border-color: #4CAF50;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-padding: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0, 0, 2);
+}
+
+.vbox {
+    -fx-padding: 40px;
+}
+
+.header {
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+    -fx-padding: 10px 16px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 3);
+}
+
+.button:hover {
+    -fx-background-color: #388E3C;
+}
+
+.medium {
+    -fx-background-color: #9d931c;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+    -fx-padding: 10px 16px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 3);
+}
+
+.medium:hover {
+    -fx-background-color: #8e8338;
+}
